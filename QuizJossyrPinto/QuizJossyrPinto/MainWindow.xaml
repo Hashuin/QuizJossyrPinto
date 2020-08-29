@@ -6,7 +6,38 @@
         xmlns:local="clr-namespace:QuizJossyrPinto"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,0,2,-5">
+        <StackPanel Name="pnlForm" HorizontalAlignment="Right" Height="356" Margin="0,19,460,0" VerticalAlignment="Top" Width="289">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D87CD" Offset="0.009"/>
+                    <GradientStop Color="#FFEA9393" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+            <Label Content="Inicio de sesión" HorizontalAlignment="Center" FontWeight="Bold" Margin="20" FontSize="24"/>
+            <Label Content="Username" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+            <TextBox x:Name="txtUsername" Height="23" TextWrapping="Wrap" Text="" Margin="77,0"/>
+            <Label Content="Password" HorizontalAlignment="Center" FontWeight="Bold" Margin="20"/>
+            <TextBox x:Name="txtPassword" Height="24" TextWrapping="Wrap" Text="" Margin="77,0"/>
+
+
+            <Button x:Name="btnLogin" Content="LogIn" RenderTransformOrigin="0.5,0.542" Height="21" Margin="124,20" FontFamily="Gill Sans MT" FontWeight="Bold" FontSize="14" Click="BtnLogin_Click"/>
+
+        </StackPanel>
+        <StackPanel Name="pnlAccess" Visibility="Hidden" HorizontalAlignment="Left" Height="356" Margin="436,19,0,0" VerticalAlignment="Top" Width="292">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D87CD" Offset="0"/>
+                    <GradientStop Color="#FFEA9393" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="Bienvenido" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="20"/>
+            <Label Content="Username" HorizontalAlignment="Left" Margin="0"/>
+            <Button x:Name="btnLogout" Content="LogOut" Margin="120,148,120,160" Height="22" FontWeight="Bold" Click="BtnLogout_Click"/>
+
+        </StackPanel>
+
+
     </Grid>
 </Window>

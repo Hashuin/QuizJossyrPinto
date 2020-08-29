@@ -24,5 +24,17 @@ namespace QuizJossyrPinto
         {
             InitializeComponent();
         }
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            pnlAccess.Visibility = Visibility.Visible;
+            pnlForm.Visibility = Visibility.Hidden;
+        }
+
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            pnlAccess.Visibility = Visibility.Hidden;
+            pnlForm.Visibility = Visibility.Visible;
+        }
     }
 }
