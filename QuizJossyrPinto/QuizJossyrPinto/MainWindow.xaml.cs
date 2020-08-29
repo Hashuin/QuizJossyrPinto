@@ -27,14 +27,25 @@ namespace QuizJossyrPinto
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-            pnlAccess.Visibility = Visibility.Visible;
-            pnlForm.Visibility = Visibility.Hidden;
+            if (txtUsername.Text.ToLower() == "mrkeroro" && txtPassword.Password == "1234")
+            {
+                pnlAccess.Visibility = Visibility.Visible;
+                lblUsername.Content = txtUsername.Text;
+                pnlForm.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                MessageBox.Show("Wrong Password or Username");
+            }
         }
+
 
         private void BtnLogout_Click(object sender, RoutedEventArgs e)
         {
             pnlAccess.Visibility = Visibility.Hidden;
             pnlForm.Visibility = Visibility.Visible;
+            txtUsername.Text = "";
+            txtPassword.Password = "";
         }
     }
 }

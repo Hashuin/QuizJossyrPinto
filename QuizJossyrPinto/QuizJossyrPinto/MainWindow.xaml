@@ -19,7 +19,7 @@
             <Label Content="Username" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
             <TextBox x:Name="txtUsername" Height="23" TextWrapping="Wrap" Text="" Margin="77,0"/>
             <Label Content="Password" HorizontalAlignment="Center" FontWeight="Bold" Margin="20"/>
-            <TextBox x:Name="txtPassword" Height="24" TextWrapping="Wrap" Text="" Margin="77,0"/>
+            <PasswordBox x:Name="txtPassword" Height="24"  Margin="77,0"/>
 
 
             <Button x:Name="btnLogin" Content="LogIn" RenderTransformOrigin="0.5,0.542" Height="21" Margin="124,20" FontFamily="Gill Sans MT" FontWeight="Bold" FontSize="14" Click="BtnLogin_Click"/>
@@ -33,7 +33,7 @@
                 </LinearGradientBrush>
             </StackPanel.Background>
             <Label Content="Bienvenido" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="20"/>
-            <Label Content="Username" HorizontalAlignment="Left" Margin="0"/>
+            <Label Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="0"/>
             <Button x:Name="btnLogout" Content="LogOut" Margin="120,148,120,160" Height="22" FontWeight="Bold" Click="BtnLogout_Click"/>
 
         </StackPanel>
