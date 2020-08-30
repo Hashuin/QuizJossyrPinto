@@ -14,7 +14,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="MyApp" HorizontalAlignment="Stretch" Margin="331,-5,311,0" VerticalAlignment="Top" FontSize="36" Height="61" Foreground="White"/>
-        <Frame Name="mainFrame" Content=""  Margin="0,56,-10,0"  Width="800" Source="/QuizJossyrPinto;component/Login.xaml" NavigationUIVisibility="Hidden" />
+        <Frame Name="mainFrame" Content=""  Margin="0,56,0,0" Source="/QuizJossyrPinto;component/Login.xaml" NavigationUIVisibility="Hidden" />
 
 
 
