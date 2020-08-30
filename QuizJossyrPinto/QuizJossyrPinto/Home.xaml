@@ -16,15 +16,23 @@
                 <GradientStop Color="#FFB99191" Offset="0.984"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="501,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="302" Width="248" Background="White"/>
-        <Label Content="Producto" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtProductName" HorizontalAlignment="Left" Height="23" Margin="90,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" TextChanged="TxtProductName_TextChanged"/>
-        <Button Name="bntSave" Content="Save" HorizontalAlignment="Left" Margin="121,269,0,0" VerticalAlignment="Top" Width="75" Click="BntSave_Click"/>
-        <RadioButton GroupName="category" Content="Food's" HorizontalAlignment="Left" Margin="90,101,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton GroupName="category" Content="Clothes" HorizontalAlignment="Left" Margin="90,133,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
-        <Label Name="lblCategory" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnLogout" Content="LogOut"  Height="22" FontWeight="Bold" Click="BtnLogout_Click" HorizontalAlignment="Center" Width="52" Margin="10,10,728,318"/>
+        <Image Source="Christmas-christmastree-gifts-happy-light-photography-1528839-wallhere.com.jpg" Stretch="UniformToFill"/>
+        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="302" Margin="453,30,0,0" VerticalAlignment="Top" Width="235" Foreground="White" Background="Black"/>
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="86,33,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+        <Label Content="Producto" HorizontalAlignment="Left" Margin="16,30,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="107,162,0,0" VerticalAlignment="Top" Width="75" Click="BtnSave_Click"/>
+        <RadioButton GroupName="category" Content="Food" HorizontalAlignment="Left" Margin="86,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Foreground="White"/>
+        <RadioButton GroupName="category" Content="Clothes" HorizontalAlignment="Left" Margin="162,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" FontWeight="Bold" Background="White" Foreground="White"/>
+
+        <Label Content="Category" HorizontalAlignment="Left" Margin="16,99,0,222" Foreground="White"/>
+        <Label x:Name="lblCategory" Content="Label" Visibility="Hidden" HorizontalAlignment="Left" Margin="306,200,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="category" Content="Other" Checked="RadioButton_Checked" HorizontalAlignment="Left" Margin="246,105,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="btnLogout" Content="LogOut" HorizontalAlignment="Left" Margin="16,312,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="BtnLogout_Click_1"/>
+
+
+
+
+
 
     </Grid>
 </Page>

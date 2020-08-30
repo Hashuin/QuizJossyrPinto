@@ -15,6 +15,16 @@
     </Page.Background>
 
     <Grid>
+        <Image  Source="nature-1472239-wallhere.com.jpg" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" Margin="0,-4,0,0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="179.715"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <Label Content="Login" HorizontalAlignment="Center" FontWeight="Bold" Margin="305,10,303,297" FontSize="24"/>
         <Label Content="Username" HorizontalAlignment="Center" FontWeight="Bold" Margin="360,80,364,245"/>
         <TextBox x:Name="txtUsername" Height="23" TextWrapping="Wrap" Text="" Margin="317,110,319,217"/>

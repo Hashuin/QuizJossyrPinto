@@ -25,14 +25,11 @@ namespace QuizJossyrPinto
             InitializeComponent();
         }
 
-        private void BntSave_Click(object sender, RoutedEventArgs e)
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-            string productName = txtProductName.Text;
             string category = lblCategory.Content.ToString();
-            
-            txtResults.Text = productName+"\n"+category;
-            
-            txtResults.Text = string.Empty;
+            lstBox.Items.Add(txtBox.Text+": "+category);
+            txtBox.Text = string.Empty;
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
@@ -44,10 +41,9 @@ namespace QuizJossyrPinto
             }
         }
 
-        protected void BtnLogout_Click(object sender, RoutedEventArgs e)
+        private void BtnLogout_Click_1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Page1());
         }
-
     }
 }

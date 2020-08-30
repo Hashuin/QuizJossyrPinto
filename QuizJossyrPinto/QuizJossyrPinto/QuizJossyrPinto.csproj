@@ -108,5 +108,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="6fhc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1024bda12ba9fe9a4eb34e600fbeef8f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="c08bd585fd09aedf1b7c6489a10b9fde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Christmas-christmastree-gifts-happy-light-photography-1528839-wallhere.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nature-1472239-wallhere.com.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
