@@ -20,7 +20,7 @@
         <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="302" Margin="453,30,0,0" VerticalAlignment="Top" Width="235" Foreground="White" Background="Black"/>
         <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="86,33,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
         <Label Content="Producto" HorizontalAlignment="Left" Margin="16,30,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="107,162,0,0" VerticalAlignment="Top" Width="75" Click="BtnSave_Click"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="86,261,0,0" VerticalAlignment="Top" Width="75" Click="BtnSave_Click" RenderTransformOrigin="0.467,0.5"/>
         <RadioButton GroupName="category" Content="Food" HorizontalAlignment="Left" Margin="86,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Foreground="White"/>
         <RadioButton GroupName="category" Content="Clothes" HorizontalAlignment="Left" Margin="162,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" FontWeight="Bold" Background="White" Foreground="White"/>
 
@@ -28,6 +28,11 @@
         <Label x:Name="lblCategory" Content="Label" Visibility="Hidden" HorizontalAlignment="Left" Margin="306,200,0,0" VerticalAlignment="Top"/>
         <RadioButton GroupName="category" Content="Other" Checked="RadioButton_Checked" HorizontalAlignment="Left" Margin="246,105,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="btnLogout" Content="LogOut" HorizontalAlignment="Left" Margin="16,312,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="BtnLogout_Click_1"/>
+        <Slider Name="Slider" Maximum="10" TickFrequency="1" TickPlacement="Both" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="86,157,0,0" VerticalAlignment="Top" Height="23" Width="137" ValueChanged="Slider_ValueChanged"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="16,154,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock Name="txtValue" HorizontalAlignment="Left" Margin="233,157,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="21" Width="38" Foreground="White" FontSize="16"/>
+        <ComboBox Name="cmBox" HorizontalAlignment="Left" Margin="86,200,0,0" VerticalAlignment="Top" Width="120"  Loaded="CmBox_Loaded"/>
+        
 
 
 

@@ -28,8 +28,9 @@ namespace QuizJossyrPinto
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
             string category = lblCategory.Content.ToString();
-            lstBox.Items.Add(txtBox.Text+": "+category);
+            lstBox.Items.Add(txtBox.Text+": "+category+": "+txtValue.Text);
             txtBox.Text = string.Empty;
+
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
@@ -45,5 +46,19 @@ namespace QuizJossyrPinto
         {
             NavigationService.Navigate(new Page1());
         }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            txtValue.Text = Slider.Value.ToString();
+            
+        }
+
+        private void CmBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            cmBox.Items.Add("Con bolsa");
+            cmBox.Items.Add("Sin bolsa");
+        }
+
+
     }
 }
