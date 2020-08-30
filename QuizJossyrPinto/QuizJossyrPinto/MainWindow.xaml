@@ -33,8 +33,13 @@
                 </LinearGradientBrush>
             </StackPanel.Background>
             <Label Content="Bienvenido" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="20"/>
-            <Label Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="0"/>
-            <Button x:Name="btnLogout" Content="LogOut" Margin="120,148,120,160" Height="22" FontWeight="Bold" Click="BtnLogout_Click"/>
+            <Label x:Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="0" Height="23"/>
+            <Label x:Name="Fruta" Content="Ingresa la fruta" HorizontalAlignment="Center" Width="94" Height="28" Margin="102,0,96,0"/>
+            <TextBox Name="txtFrutas" Height="23" TextWrapping="Wrap" HorizontalAlignment="Center" Width="117"/>
+            <Button Content="Agregar" HorizontalAlignment="Center" VerticalAlignment="Center" Width="63" Click="Button_Click" Margin="3"/>
+            <Label x:Name="lblFrutas" Content=" "  HorizontalAlignment="Center" RenderTransformOrigin="-0.9,-17" Margin="20,5,92,5" Height="24" Width="180"/>
+            <ListBox x:Name="lstFrutas" Height="111" Margin="0,-5,20,10" HorizontalAlignment="Right" Width="252" SelectionChanged="LstFrutas_SelectionChanged" />
+            <Button x:Name="btnLogout" Content="LogOut"  Height="22" FontWeight="Bold" Click="BtnLogout_Click" HorizontalAlignment="Center" Width="52" Margin="120,0"/>
 
         </StackPanel>
 

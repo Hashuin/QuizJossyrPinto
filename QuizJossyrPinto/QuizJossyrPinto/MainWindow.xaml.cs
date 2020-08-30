@@ -47,5 +47,11 @@ namespace QuizJossyrPinto
             txtUsername.Text = "";
             txtPassword.Password = "";
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            lstFrutas.Items.Add(txtFrutas.Text);
+            txtFrutas.Text = string.Empty;
+        }
     }
 }
