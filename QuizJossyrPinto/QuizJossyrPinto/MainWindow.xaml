@@ -5,43 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuizJossyrPinto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded_1">
     <Grid Margin="0,0,2,-5">
-        <StackPanel Name="pnlForm" HorizontalAlignment="Right" Height="356" Margin="0,19,460,0" VerticalAlignment="Top" Width="289">
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF0D87CD" Offset="0.009"/>
-                    <GradientStop Color="#FFEA9393" Offset="1"/>
-                </LinearGradientBrush>
-            </StackPanel.Background>
+        <Label Content="MyApp" HorizontalAlignment="Stretch" Margin="331,-5,332,0" VerticalAlignment="Top" FontSize="36" Height="61"/>
+        <Frame Name="mainFrame" Content=""  Margin="0,56,-10,0"  Width="800" Source="/QuizJossyrPinto;component/Login.xaml" NavigationUIVisibility="Hidden" />
 
-            <Label Content="Inicio de sesión" HorizontalAlignment="Center" FontWeight="Bold" Margin="20" FontSize="24"/>
-            <Label Content="Username" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
-            <TextBox x:Name="txtUsername" Height="23" TextWrapping="Wrap" Text="" Margin="77,0"/>
-            <Label Content="Password" HorizontalAlignment="Center" FontWeight="Bold" Margin="20"/>
-            <PasswordBox x:Name="txtPassword" Height="24"  Margin="77,0"/>
-
-
-            <Button x:Name="btnLogin" Content="LogIn" RenderTransformOrigin="0.5,0.542" Height="21" Margin="124,20" FontFamily="Gill Sans MT" FontWeight="Bold" FontSize="14" Click="BtnLogin_Click"/>
-
-        </StackPanel>
-        <StackPanel Name="pnlAccess" Visibility="Hidden" HorizontalAlignment="Left" Height="356" Margin="436,19,0,0" VerticalAlignment="Top" Width="292">
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF0D87CD" Offset="0"/>
-                    <GradientStop Color="#FFEA9393" Offset="1"/>
-                </LinearGradientBrush>
-            </StackPanel.Background>
-            <Label Content="Bienvenido" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="20"/>
-            <Label x:Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="0" Height="23"/>
-            <Label x:Name="Fruta" Content="Ingresa la fruta" HorizontalAlignment="Center" Width="94" Height="28" Margin="102,0,96,0"/>
-            <TextBox Name="txtFrutas" Height="23" TextWrapping="Wrap" HorizontalAlignment="Center" Width="117"/>
-            <Button Content="Agregar" HorizontalAlignment="Center" VerticalAlignment="Center" Width="63" Click="Button_Click" Margin="3"/>
-            <Label x:Name="lblFrutas" Content=" "  HorizontalAlignment="Center" RenderTransformOrigin="-0.9,-17" Margin="20,5,92,5" Height="24" Width="180"/>
-            <ListBox x:Name="lstFrutas" Height="111" Margin="0,-5,20,10" HorizontalAlignment="Right" Width="252" SelectionChanged="LstFrutas_SelectionChanged" />
-            <Button x:Name="btnLogout" Content="LogOut"  Height="22" FontWeight="Bold" Click="BtnLogout_Click" HorizontalAlignment="Center" Width="52" Margin="120,0"/>
-
-        </StackPanel>
 
 
     </Grid>

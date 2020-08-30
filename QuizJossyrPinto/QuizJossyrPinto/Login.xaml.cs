@@ -16,18 +16,26 @@ using System.Windows.Shapes;
 namespace QuizJossyrPinto
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1 : Page
     {
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (txtUsername.Text.ToLower() == "mrkeroro" && txtPassword.Password == "1234")
+            {
+               MainWindow w = (MainWindow)Window.GetWindow(this);
+                w.mainFrame.NavigationService.Navigate(new Home());
+            }
+            else
+            {
+                MessageBox.Show("Wrong Password or Username");
+            }
         }
     }
 }
